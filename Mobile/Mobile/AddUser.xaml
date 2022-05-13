@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mobile.View.AddUser">
+
+    <Grid BackgroundColor="#000000">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="400"/>
+            <RowDefinition Height="AUTO"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Image Source = "IntelitraderLogo" Grid.Row="1" WidthRequest="200" Margin="0, 0, 0, 10" />
+
+
+        <FlexLayout Direction="Column" AlignItems="Center" JustifyContent="Center" Grid.Row="2" >
+
+
+            <Label WidthRequest="300" Margin="0,10,0,0" FontSize="16" >User Firstname:</Label>
+
+            <Frame Padding = "2" CornerRadius="5" Margin="0, 10, 0, 10" >
+
+                <Entry 
+                    x:Name="txtFirstname"
+                    FontSize="15"
+                    WidthRequest="300"
+                    BackgroundColor="White"
+                    TextColor="Black"
+                    Keyboard="Text"
+                    MaxLength="10"
+                />
+
+            </Frame>
+
+            <Label WidthRequest="300" Margin="0,10,0,0" FontSize="16" >User Surname:</Label>
+
+            <Frame Padding = "2" CornerRadius="5" Margin="0, 10, 0, 10" >
+
+                <Entry 
+                    x:Name="txtSurname"
+                    FontSize="15" 
+                    WidthRequest="300" 
+                    BackgroundColor="White"
+                    TextColor="Black" 
+                    Keyboard="Text"
+                    MaxLength="10"
+                />
+
+            </Frame>
+
+            <Label WidthRequest="300" Margin="0,10,0,0" FontSize="16" >User Age:</Label>
+
+            <Frame Padding = "2" CornerRadius="5" Margin="0, 10, 0, 0" >
+
+                <Entry 
+                    x:Name="txtAge"
+                    FontSize="15" 
+                    WidthRequest="300" 
+                    BackgroundColor="White"
+                    TextColor="Black" 
+                    Keyboard="Numeric"
+                    MaxLength="2"
+                />
+
+            </Frame>
+
+            <Button 
+                Text="Add User"
+                Clicked="Add_User_To_List"
+                BackgroundColor="#FE7B1D" 
+                TextColor="#FFFFFF" 
+                FontSize="17" 
+                Margin="0, 50, 0,0" 
+                Padding="10"
+                WidthRequest="300" 
+                CornerRadius="5"                  
+            />
+
+        </FlexLayout>
+
+    </Grid>
+
+
+</ContentPage>

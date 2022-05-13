@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mobile.ShowUsers">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem 
+            Text="Refresh"
+            IconImageSource="Refresh"
+            Clicked="Update_Users_List"
+            Order="Primary"
+        />
+    </ContentPage.ToolbarItems>
+
+
+    <ScrollView>
+        <FlexLayout 
+            AlignItems="Start" 
+            JustifyContent="Start"
+            Direction="Column"
+            Padding="0,0,0,0"
+            BackgroundColor="#000000"
+        >
+
+            <ListView x:Name="UserListView" Margin="20"></ListView>
+        </FlexLayout>
+
+    </ScrollView>
+    
+</ContentPage>
